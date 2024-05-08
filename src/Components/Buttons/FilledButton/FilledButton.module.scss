@@ -1,0 +1,28 @@
+@import "../../../styles/Theme";
+
+$filled-button-color: #4258ff;
+
+button.filledButton__mainButton__button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: progress;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+
+  &:active {
+    filter: brightness(100%);
+  }
+
+  &:disabled {
+    filter: brightness(140%);
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../styles/Theme';
+
+div.socialButtons__mainContainer__div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button.socialButtons__socialButton__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: transparent;
+  outline: none;
+  border: 1px solid $border-color-uf;
+  border-radius: 7px;
+  cursor: pointer;
+
+  svg {
+    font-size: 18px;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.07);
+  }
+}

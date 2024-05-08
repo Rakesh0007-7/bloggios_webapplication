@@ -1,0 +1,13 @@
+@import "../styles/Theme";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $black-500;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #eff6ff, #fef2f2) fixed;
+}

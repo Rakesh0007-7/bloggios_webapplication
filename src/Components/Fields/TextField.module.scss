@@ -1,0 +1,30 @@
+@import "../../styles/Theme";
+
+div.textField__mainWrapper__div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.textField__innerDiv__div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 4px 10px;
+  border: 1px solid $border-color-uf;
+  border-radius: 6px;
+  align-items: center;
+
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background: transparent;
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../../styles/Theme";
+
+nav.navbar__mainContainer__nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px solid $border-color-uf;
+
+  .navbar__rightInfo__div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      outline: none;
+      border: none;
+      background: transparent;
+      padding: 10px;
+      letter-spacing: 1px;
+      border-radius: 10px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button:first-child {
+      color: $accent-color;
+
+      &:hover {
+        color: $accent-color-1200;
+        text-decoration: underline;
+      }
+    }
+
+    button:last-child {
+      background: $accent-color;
+      color: $primary-color;
+      box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background: $accent-color-1200;
+      }
+
+      &:active {
+        background: $accent-color-1100;
+      }
+    }
+  }
+
+  .navbar__leftInfo__div {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    position: relative;
+
+    .navbar__searchBar__div {
+      width: clamp(200px, 40vw, 280px);
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      padding: 5px 8px;
+      border-radius: 16px;
+      position: relative;
+      border: 2px solid $border-color-uf;
+      transition: all 150ms ease-in-out;
+
+      svg {
+        font-size: 18px;
+        flex-shrink: 0;
+        color: #9f9f9f;
+      }
+
+      input {
+        width: 100%;
+        flex: 1;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        padding: 2px 0;
+        box-sizing: border-box;
+        letter-spacing: 2px;
+
+        &::placeholder {
+          color: #9f9f9f;
+        }
+      }
+
+      .navbar__searchItem__div {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        top: 100%;
+        left: 0;
+        border-radius: 0 0 16px 16px;
+        border-bottom: 2px solid $accent-color;
+        border-left: 2px solid $accent-color;
+        border-right: 2px solid $accent-color;
+      }
+    }
+  }
+}
